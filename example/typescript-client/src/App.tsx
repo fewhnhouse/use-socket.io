@@ -2,7 +2,7 @@ import React from 'react'
 import { SocketProvider, useSocket } from 'use-socket-io'
 
 const SocketUser = () => {
-  const [data, emit] = useSocket('eventName')
+  const [data, emit] = useSocket<string, string>('eventName')
   const handleClick = () => {
     emit('message')
   }
