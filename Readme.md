@@ -20,7 +20,7 @@ const  App = () => {
 		reconnectionDelay: 500
 	}
 	return (
-		<SocketProvider  url="ws://localhost:4000" options={options}>
+		<SocketProvider  uri="ws://localhost:4000" options={options}>
 			<YourApp/>
 		</SocketProvider>
 	)
