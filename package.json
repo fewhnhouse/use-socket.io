@@ -1,6 +1,6 @@
 {
-  "name": "use-socket-io",
-  "version": "1.0.0",
+  "name": "@fe.whnhouse/use-socket.io",
+  "version": "1.0.1",
   "description": "A React Hook to use with Socket.io",
   "main": "build/index.js",
   "scripts": {
