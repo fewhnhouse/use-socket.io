@@ -7,11 +7,10 @@ app.get('/', function(req, res) {
 })
 
 io.on('connection', function(socket) {
-  console.log('a user connected')
-  socket.on('test', (message) => {
-    console.log('test event!',message)
+  socket.on('eventName', (message) => {
+    console.log('eventName: ', message)
   })
-  socket.emit('test', 'hey')
+  socket.emit('eventName', 'Hello from socket.io!')
 })
 
 
