@@ -17,7 +17,7 @@ const SocketUser = () => {
 
 const App = () => {
   return (
-    <SocketProvider url="ws://localhost:4000">
+    <SocketProvider uri="ws://localhost:4000">
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
