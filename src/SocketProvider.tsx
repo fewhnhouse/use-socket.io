@@ -1,5 +1,5 @@
 import React from 'react'
-import { Context } from './context'
+import { Context } from './SocketContext'
 import * as io from 'socket.io-client'
 
 export interface ISocketProviderProps {

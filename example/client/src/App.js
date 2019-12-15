@@ -5,9 +5,7 @@ import './App.css'
 
 const SocketUser = () => {
   const [data, emit] = useSocket('test')
-  console.log(data, emit)
   const handleClick = () => {
-    console.log('emit')
     emit('test')
   }
   return (

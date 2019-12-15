@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import { Context } from './context'
+import { Context } from './SocketContext'
 
 export function useSocket<ReceivingData, SendingData>(eventKey: string) {
   const socket = useContext(Context)
@@ -8,6 +8,7 @@ export function useSocket<ReceivingData, SendingData>(eventKey: string) {
   const emit = (data: SendingData) => {
     socket?.emit(eventKey, data)
   }
+
   useEffect(() => {
     socket?.on(eventKey, (...args: ReceivingData[]) => {
       setData(args)
@@ -16,6 +17,7 @@ export function useSocket<ReceivingData, SendingData>(eventKey: string) {
       socket?.removeListener(eventKey)
     }
   }, [eventKey, socket])
+
 
   return [data, emit]
 }
