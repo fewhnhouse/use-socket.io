@@ -19,5 +19,5 @@ export function useSocket<ReceivingData, SendingData>(eventKey: string) {
   }, [eventKey, socket])
 
 
-  return [data, emit]
+  return [data, emit] as [ReceivingData[], (data: SendingData) => void]
 }
