@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import logo from './logo.svg'
-import { SocketProvider, useSocket, useCustomHook } from 'use-socket-io'
+import { SocketProvider, useSocket } from 'use-socket-io'
 import './App.css'
 
 const SocketUser = () => {
