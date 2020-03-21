@@ -1,6 +1,6 @@
 {
   "name": "@fe.whnhouse/use-socket.io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React Hook to use with Socket.io",
   "main": "build/index.js",
   "scripts": {
@@ -20,6 +20,10 @@
     "socket",
     "socket.io"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fewhnhouse/use-socket.io.git"
+  },
   "author": "Felix Wohnhaas",
   "license": "MIT",
   "dependencies": {},
